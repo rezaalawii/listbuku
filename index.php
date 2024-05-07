@@ -11,12 +11,10 @@
     <style>
         .header h1 {
             margin-top: 1px;
-            /* Menggeser teks "Buku" ke atas */
         }
 
         .topnav {
             margin-top: 1px;
-            /* Menggeser navigasi "Topnav" ke atas */
         }
 
         .dark-mode-toggle {
@@ -62,42 +60,32 @@
 
         body.dark-mode {
             background-color: rgb(40, 40, 40);
-            /* Ubah warna latar belakang body ke hitam */
             color: #fff;
-            /* Ubah warna teks ke putih */
         }
 
         .header.dark-mode,
         .topnav.dark-mode {
             background-color: rgb(40, 40, 40);
-            /* Ubah warna header dan topnav ke abu-abu gelap */
             color: #fff;
-            /* Ubah warna teks pada header dan topnav ke putih */
         }
 
         .book-list.dark-mode {
             background-color: rgb(64, 64, 64);
-            /* Ubah warna latar belakang book-list ke abu-abu gelap */
             color: #fff;
-            /* Ubah warna teks pada book-list ke putih */
         }
 
         .topnav.light-mode a {
             color: #000;
-            /* Change text color of links in topnav to black in light mode */
         }
 
         .topnav.dark-mode a {
             color: #fff;
-            /* Change text color of links in topnav to white in dark mode */
         }
 
         .topnav.dark-mode a:hover {
             color: red;
-            /* Add background color on hover in dark mode */
         }
 
-        /* Hide moon icon by default */
         .moon-icon {
             display: none;
         }
@@ -185,15 +173,10 @@
             }
         }
 
-
-        /* Tampilkan menu saat mode responsif aktif */
         .topnav.responsive.active {
             display: block;
         }
 
-
-
-        /* Sembunyikan menu saat mode desktop */
         @media screen and (max-width: 768px) {
             .topnav {
                 display: none;

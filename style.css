@@ -1,0 +1,102 @@
+ body {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    body, .topnav a, .header h1, .book-list {
+        font-family: Calibri, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+        font-family: 'Segoe UI' sans-serif; 
+    }
+    
+    .topnav{
+        overflow: hidden;
+        background-color: white;
+    }
+    
+    .topnav a{
+        float: left;
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    
+    .topnav a:hover{
+        color: red;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background : white;
+        border: white;
+        max-width: 200px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+    .book-list {
+        margin: 10px 0;
+        transition: transform 0.3s ease; 
+    }
+    
+    .book-list:hover {
+        transform: scale(1.1); 
+    }
+    
+    ul li {
+        margin: 10px 0;
+    }
+
+    ul li img {
+        width: 150px; 
+        height: 150px; 
+        object-fit: contain; 
+        display: block;
+        margin: 0 auto; 
+        
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+        background-color:white;
+        border-right: 2px solid #ddd;
+    }
+    
+    .topnav a {
+        display: block; 
+        margin: 5px 0; 
+        color: #000; 
+        text-decoration: none; 
+    }
+    
+    .topnav {
+        padding-left: 20px;
+    }
+    
+    .book-list {
+        flex-basis: calc(100% / 3 - 20px); /* Menyesuaikan ini sesuai kebutuhan, asumsi 3 item per baris dengan margin */
+        margin: 10px;
+        list-style-type: none;
+        border: 1px solid #ddd; 
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .book-list img {
+        width: 100%; 
+        height: auto; 
+    }
+    

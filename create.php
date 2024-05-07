@@ -18,19 +18,14 @@
 
         .form-container {
             position: relative;
-            /* Menambahkan posisi relatif */
         }
 
         .alert-container {
             position: absolute;
             top: 50%;
-            /* Pusat vertikal */
             left: 50%;
-            /* Pusat horizontal */
             transform: translate(-50%, -50%);
-            /* Pusat vertikal dan horizontal */
             z-index: 999;
-            /* Pastikan alert di atas elemen lain */
         }
 
         .form-container {
@@ -101,17 +96,14 @@
 
         .success {
             background-color: #4CAF50;
-            /* Warna hijau untuk pesan kesuksesan */
             color: white;
         }
 
         .failed {
             background-color: #f44336;
-            /* Warna merah untuk pesan kegagalan */
             color: white;
         }
 
-        /* Tombol tutup (x) pada alert */
         .closebtn {
             margin-left: 15px;
             color: white;
@@ -123,7 +115,6 @@
             transition: 0.3s;
         }
 
-        /* Ketika tombol tutup (x) dihover */
         .closebtn:hover {
             color: black;
         }
