@@ -128,23 +128,23 @@
             <ul>
                 <li>
                     <label for="judul">Judul : </label>
-                    <input type="text" name="judul" id="judul">
+                    <input type="text" name="judul" id="judul" required>
                 </li>
                 <li>
                     <label for="pengarang">Pengarang : </label>
-                    <input type="text" name="pengarang" id="pengarang">
+                    <input type="text" name="pengarang" id="pengarang"  required>
                 </li>
                 <li>
                     <label for="halaman">Halaman : </label>
-                    <input type="text" name="halaman" id="halaman">
+                    <input type="text" name="halaman" id="halaman" required>
                 </li>
                 <li>
                     <label for="tahun">Tahun : </label>
-                    <input type="text" name="tahun" id="tahun">
+                    <input type="text" name="tahun" id="tahun" required>
                 </li>
                 <li>
                     <label for="penerbit">Penerbit : </label>
-                    <input type="text" name="penerbit" id="penerbit">
+                    <input type="text" name="penerbit" id="penerbit" required>
                 </li>
                 <li>
                     <label for="foto">Foto : </label>
@@ -156,26 +156,26 @@
     </div>
 
     <?php
-    require 'koneksi.php';
+require 'koneksi.php';
 
-    if (isset($_POST['submit'])) {
-        if (create($_POST) > 0) {
-            echo "<div class='alert-container'>
-                <div class='alert success'> <!-- Menambahkan kelas 'success' di sini -->
-                    Data berhasil disimpan
-                    <span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span>
-                </div>
-            </div>";
-        } else {
-            echo "<div class='alert-container'>
-                <div class='alert'>
-                    Data gagal disimpan
-                    <span class='closebtn' onclick='this.parentElement.style.display=\"none\";'>&times;</span>
-                </div>
-            </div>";
-        }
+if (isset($_POST['submit'])) {
+    if (create($_POST) > 0) {
+        echo "<div class='alert-container'>
+            <div class='alert success'> 
+                Data berhasil disimpan
+                <span class='closebtn' onclick=\"this.parentElement.parentElement.style.display='none'; window.location.href='index.php';\">&times;</span>
+            </div>
+        </div>";
+    } else {
+        echo "<div class='alert-container'>
+            <div class='alert'>
+                Data gagal disimpan
+                <span class='closebtn' onclick=\"this.parentElement.parentElement.style.display='none'; window.location.href='index.php';\">&times;</span>
+            </div>
+        </div>";
     }
-    ?>
+}
+?>
 
 </body>
 
